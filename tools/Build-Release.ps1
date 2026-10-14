@@ -7,7 +7,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 $sources=@('Bili3x.Core.ps1','Bili3x.Automatic.ps1','Bili3x.Command.ps1','Install-BiliAutomatic.ps1','patch_bili_asar.ps1','lib/AsarEngine.cs',
     '应用补丁.bat','查看状态.bat','回滚.bat','启用自动补丁.bat','关闭自动补丁.bat','使用说明.md','开始使用.txt','.gitignore',
     'tests/Verify-Bili3x.ps1','tools/Review-Bili3x.ps1','tools/Build-Release.ps1',
-    'README.md','LICENSE','VERSION','.gitattributes','.github/workflows/verify.yml','docs/images/hero.svg','docs/images/quickstart.svg')
+    'README.md','LICENSE','VERSION','.gitattributes','.github/workflows/verify.yml','docs/images/hero.svg','docs/images/quickstart.svg','docs/images/download.svg')
 $files=$sources+@('artifacts/code-review.txt','artifacts/verification.json','artifacts/live-acceptance.json','artifacts/privacy-review.json','artifacts/source-hashes.txt')
 foreach($file in $sources){if(-not (Test-Path -LiteralPath (Join-Path $root $file) -PathType Leaf)){throw 'Missing release source file.'}}
 $hashes=@($sources|ForEach-Object{'{0}  {1}' -f (Get-FileHash -LiteralPath (Join-Path $root $_) -Algorithm SHA256).Hash.ToLowerInvariant(),$_})

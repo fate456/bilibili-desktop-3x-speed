@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/fate456/bilibili-desktop-3x-speed/releases/latest"><img src="https://img.shields.io/github/v/release/fate456/bilibili-desktop-3x-speed?style=flat-square&label=下载" alt="下载最新版"></a>
+  <a href="https://github.com/fate456/bilibili-desktop-3x-speed/releases/latest"><img src="docs/images/download.svg" alt="下载最新版"></a>
   <img src="https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?style=flat-square" alt="Windows 10 / 11">
   <img src="https://img.shields.io/badge/PowerShell-5.1-5391FE?style=flat-square" alt="系统自带 PowerShell 5.1">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-34B27B?style=flat-square" alt="MIT License"></a>
