@@ -1,0 +1,2 @@
+# Preserve release bytes, including Windows PowerShell UTF-8 BOM and CRLF.
+* -text

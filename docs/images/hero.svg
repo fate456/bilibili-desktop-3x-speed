@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-labelledby="title desc">
+<title id="title">Bili3x · B站客户端三倍速</title><desc id="desc">Windows 桌面客户端，启用一次，兼容的更新自动维护。</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101a35"/><stop offset="1" stop-color="#1c3154"/></linearGradient><linearGradient id="accent" x2="1" y2="1"><stop stop-color="#57ddff"/><stop offset="1" stop-color="#a18aff"/></linearGradient></defs>
+<rect width="1000" height="340" rx="24" fill="url(#bg)"/>
+<circle cx="898" cy="58" r="142" fill="#48c9ff" opacity=".06"/><circle cx="704" cy="304" r="182" fill="#9b80ff" opacity=".06"/>
+<g font-family="Segoe UI,Microsoft YaHei,Arial,sans-serif">
+<text x="54" y="64" font-size="17" letter-spacing="3" fill="#88bbd7">BILIBILI DESKTOP · WINDOWS</text>
+<text x="50" y="143" font-size="66" font-weight="700" fill="white">Bili<tspan fill="#63ddff">3x</tspan></text>
+<text x="54" y="193" font-size="28" font-weight="600" fill="#f2f5ff">B站客户端，三倍速更省时间。</text>
+<text x="54" y="237" font-size="19" fill="#b6c6df">启用一次 · 更新后自动维护 · 支持恢复原版</text>
+<rect x="54" y="270" width="268" height="34" rx="17" fill="#213d58"/><text x="72" y="292" font-size="14" fill="#9ee8fa">完整解压，双击即可开始</text>
+<rect x="681" y="61" width="256" height="210" rx="24" fill="#14223d" stroke="#486184"/>
+<path d="M712 93h56m11 0h13" stroke="#526984" stroke-width="5" stroke-linecap="round"/>
+<text x="809" y="182" text-anchor="middle" font-size="78" font-weight="700" fill="url(#accent)">3.0x</text>
+<text x="809" y="232" text-anchor="middle" font-size="16" fill="#b6c6df">在原来的倍速菜单中选择</text>
+</g></svg>

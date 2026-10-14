@@ -1,0 +1,12 @@
+{
+    "AutomaticEnabled":  true,
+    "TaskState":  "Running",
+    "Version":  1,
+    "ClientWasExited":  true,
+    "Packages":  2,
+    "SimulatedHotUpdate":  true,
+    "AutomaticRepairMatchedPreviousBytes":  true,
+    "Patched":  2,
+    "Result":  "PASS",
+    "PersonalPathsIncluded":  false
+}

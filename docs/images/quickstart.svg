@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440" role="img" aria-labelledby="title desc">
+<title id="title">三步开始使用 Bili3x</title><desc id="desc">下载解压，退出客户端后双击启用，等待后重新打开选择3倍速；更新覆盖后自动维护。</desc>
+<rect x="1" y="1" width="998" height="438" rx="24" fill="#f5f8fd" stroke="#dbe4f1"/>
+<g font-family="Segoe UI,Microsoft YaHei,Arial,sans-serif">
+<text x="36" y="47" font-size="23" font-weight="700" fill="#172c48">三步开始，以后照常打开 B站</text><text x="964" y="44" text-anchor="end" font-size="14" fill="#71809a">操作示意</text>
+<g fill="white" stroke="#d6e2ee"><rect x="30" y="75" width="298" height="219" rx="18"/><rect x="351" y="75" width="298" height="219" rx="18"/><rect x="672" y="75" width="298" height="219" rx="18"/></g>
+<g fill="#00a9d6"><circle cx="62" cy="108" r="18"/><circle cx="383" cy="108" r="18"/><circle cx="704" cy="108" r="18"/></g>
+<g fill="white" font-size="18" font-weight="700" text-anchor="middle"><text x="62" y="114">1</text><text x="383" y="114">2</text><text x="704" y="114">3</text></g>
+<g fill="#172c48" font-size="20" font-weight="600"><text x="91" y="115">下载并完整解压</text><text x="412" y="115">退出后台，启用</text><text x="733" y="115">重新打开，选 3x</text></g>
+<rect x="55" y="144" width="248" height="64" rx="12" fill="#eef5fb"/><path d="M79 161h22l7 6h26v26H79z" fill="#72bcf0"/><text x="149" y="183" font-size="17" fill="#274968">Bili3x.zip</text>
+<text x="55" y="244" font-size="16" fill="#526784">保留 lib 文件夹与所有脚本</text><text x="55" y="270" font-size="16" fill="#526784">无需安装开发环境</text>
+<rect x="374" y="144" width="252" height="64" rx="12" fill="#e6f8fd"/><text x="500" y="181" text-anchor="middle" font-size="18" font-weight="600" fill="#007d9e">启用自动补丁.bat</text>
+<text x="375" y="244" font-size="16" fill="#526784">双击，允许管理员权限提示</text><text x="375" y="270" font-size="16" fill="#526784">安装登录自动维护任务</text>
+<rect x="697" y="144" width="248" height="64" rx="12" fill="#eeebff"/><text x="821" y="188" text-anchor="middle" font-size="36" font-weight="700" fill="#7463c4">3.0x</text>
+<text x="697" y="244" font-size="16" fill="#526784">等待几秒，再打开客户端</text><text x="697" y="270" font-size="16" fill="#526784">在原来的倍速菜单选择</text>
+<rect x="30" y="318" width="940" height="96" rx="18" fill="#172c48"/>
+<text x="54" y="352" font-size="18" font-weight="600" fill="#80e1f5">以后更新：覆盖补丁 → 彻底退出后台 → 文件稳定 → 自动补回</text>
+<text x="54" y="385" font-size="16" fill="#c5d3e6">下次打开生效。新版菜单结构改变时会保留文件，等待适配。</text>
+</g></svg>

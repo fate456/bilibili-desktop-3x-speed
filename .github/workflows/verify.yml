@@ -1,0 +1,38 @@
+name: Source and privacy checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Parse Windows PowerShell scripts and compile ASAR engine
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Get-ChildItem -Recurse -Filter '*.ps1' | ForEach-Object {
+            $tokens = $null
+            $parseErrors = $null
+            [void][Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$parseErrors)
+            if ($parseErrors.Count) { throw ('PowerShell syntax error: ' + $_.Name) }
+          }
+          . .\Bili3x.Core.ps1
+      - name: Verify source hashes and privacy
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Get-Content -LiteralPath 'artifacts/source-hashes.txt' -Encoding UTF8 | ForEach-Object {
+            $parts = $_ -split '  ', 2
+            if ($parts.Count -ne 2) { throw 'Invalid source manifest' }
+            $actual = (Get-FileHash -LiteralPath $parts[1] -Algorithm SHA256).Hash.ToLowerInvariant()
+            if ($actual -ne $parts[0]) { throw ('Source hash mismatch: ' + $parts[1]) }
+          }
+          & .\tools\Review-Bili3x.ps1
+          if ($LASTEXITCODE -ne 0) { throw 'Privacy review failed' }

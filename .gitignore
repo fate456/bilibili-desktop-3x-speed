@@ -1,0 +1,15 @@
+*.log
+*.tmp
+*.backup
+*.bak
+*.asar
+*.lnk
+settings.json
+automatic-state.json
+backups/
+logs/
+__pycache__/
+artifacts/*.zip
+artifacts/*.jpg
+# Unrelated local drawing example; not part of the public tool.
+/gen_cow.py

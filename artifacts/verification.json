@@ -1,0 +1,21 @@
+{
+    "ActualClientModified":  false,
+    "Result":  "PASS",
+    "Version":  1,
+    "Checks":  [
+                   "All scripts parse in Windows PowerShell 5.1.",
+                   "Equal-length patch preserves UTF8 and offsets; repeated file/block hashes are scoped to core.js.",
+                   "Patch is idempotent.",
+                   "Verified recovery restores exact original bytes.",
+                   "Stale recovery cannot overwrite a newer client version.",
+                   "After an update, the new version gets its own verified original snapshot.",
+                   "Unknown and ambiguous menu layouts are refused without overwriting.",
+                   "Shared core storage, invalid hashes and truncated headers fail closed.",
+                   "Legacy backups are imported only after reproducing the patched bytes.",
+                   "A running client fixture prevents modification.",
+                   "Real watcher repairs same-name updates and newly named hot-update packages automatically.",
+                   "A stop request cancels a queued patch before writing; rollback cannot be repatched by the watcher.",
+                   "Real logon task uses installed runtime, survives source-folder relocation, and disables cleanly.",
+                   "Local paths and account/host identifiers are masked."
+               ]
+}
